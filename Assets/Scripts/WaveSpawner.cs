@@ -5,11 +5,14 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
+    [Header("Attributes")]
+    public float TimeBetweenWaves = 5f;
+    public int MaxNumberOfWaves = 4;
+
+    [Header("Unity Setup Fields")]
     public Transform EnemyPrefab;
     public Transform SpawnPoint;
     public Text WaveCountdownText;
-    public float TimeBetweenWaves = 5f;
-    public int MaxNumberOfWaves = 4;
 
     private float _countdown = 2f;  // Time for initial Spawn
     private int _waveIndex = 0;

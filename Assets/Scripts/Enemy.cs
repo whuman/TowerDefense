@@ -2,12 +2,11 @@
 
 public class Enemy : MonoBehaviour
 {
+    [Header("Attributes")]
     public float Speed = 10f;   // Float so that our vector math is simpler
 
     private Transform _targetWaypoint;
     private int _waypointIndex = 0;
-
-    public string Name => gameObject.name;
 
     // Start is called before the first frame update
     private void Start()
