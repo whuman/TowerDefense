@@ -6,8 +6,6 @@ public class Waypoints : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Awake - define Points collection");
-
         // Clear any existing waypoints
         Points = new Transform[transform.childCount];
 

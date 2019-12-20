@@ -49,7 +49,6 @@ public class WaveSpawner : MonoBehaviour
     {
         _waveIndex++;
 
-        Debug.Log($"Spawn Wave number {_waveIndex}");
         for (int index = 0; index < _waveIndex; index++)
         {
             Instantiate(EnemyPrefab, SpawnPoint.position, SpawnPoint.rotation);

@@ -1,17 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
     [Header("Attributes")]
     public float Range = 10f;
-    public float FireRate = 1f; // Bullets per second
+    public float FireRate = 2f; // Bullets per second
 
     [Header("Unity Setup Fields")]
     public string TargetTag = "Enemy";
     public Transform PartToRotate;
+    public Transform FirePoint;
+    public GameObject BulletPrefab;
     public float TurnSpeed = 10f;
+    public float BulletSpeed = 50f;
 
     private Transform _target;
     private float _fireCountdown;
@@ -35,6 +36,7 @@ public class Turret : MonoBehaviour
 
         ShootAtTarget();
     }
+
     private void RotateToTarget()
     {
         var targetDirection = _target.position - gameObject.transform.position;
@@ -60,7 +62,14 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {
-        Debug.Log("Shoot!");
+        var bulletInstance = Instantiate(BulletPrefab, FirePoint.position, FirePoint.rotation);
+
+        var bullet = bulletInstance.GetComponent<Bullet>();
+
+        if (bullet != null)
+        {
+            bullet.AssignTarget(_target, BulletSpeed);
+        }
     }
 
     private void UpdateTarget()
