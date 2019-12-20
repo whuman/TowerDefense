@@ -20652,12 +20652,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cec3678ead2e61947b9abc767135baa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TimeBetweenWaves: 5
+  MaxNumberOfWaves: 4
   EnemyPrefab: {fileID: 4911115991892507594, guid: 9b5a9f764b320a34cb1b5af431e5b93d,
     type: 3}
   SpawnPoint: {fileID: 8227037388691698395}
   WaveCountdownText: {fileID: 384543179}
-  TimeBetweenWaves: 5
-  MaxNumberOfWaves: 4
 --- !u!4 &1899441815
 Transform:
   m_ObjectHideFlags: 0
