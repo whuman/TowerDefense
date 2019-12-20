@@ -4,6 +4,7 @@ public class Waypoints : MonoBehaviour
 {
     public static Transform[] Points;
 
+    // Awake is called before Start method
     private void Awake()
     {
         // Clear any existing waypoints

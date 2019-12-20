@@ -9,11 +9,13 @@ public class Bullet : MonoBehaviour
     public GameObject ImpactEffectPrefab;
 
     private Transform _target;
+    private Enemy _targetEnemy;
     private float _speed = 50f;
 
     public void AssignTarget(Transform target, float speed)
     {
         _target = target;
+        _targetEnemy = target.GetComponent<Enemy>();    // Assign it here to save lookup time on Hit logic
         _speed = speed;
     }
 
@@ -64,7 +66,6 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
 
         // TODO : Assign damage to target, but for now we just destroy the target
-        var targetEnemy = _target.GetComponent<Enemy>();
-        targetEnemy.TakeDamage(Damage);
+        _targetEnemy.TakeDamage(Damage);
     }
 }
