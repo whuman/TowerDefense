@@ -550,7 +550,7 @@ Transform:
   - {fileID: 711280709}
   - {fileID: 1392863989}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &46130946
 MonoBehaviour:
@@ -4077,7 +4077,7 @@ GameObject:
   - component: {fileID: 290943984}
   - component: {fileID: 290943983}
   m_Layer: 0
-  m_Name: GameArea
+  m_Name: GameBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4154,7 +4154,7 @@ Transform:
   m_LocalScale: {x: 500, y: 1, z: 500}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &311129893
 GameObject:
@@ -4440,7 +4440,7 @@ Transform:
   - {fileID: 1162202140}
   - {fileID: 1725651018}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &319526570
 PrefabInstance:
@@ -14594,7 +14594,7 @@ GameObject:
   - component: {fileID: 1355287350}
   - component: {fileID: 1355287349}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14673,7 +14673,7 @@ RectTransform:
   m_Children:
   - {fileID: 384543178}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16441,7 +16441,7 @@ Transform:
   - {fileID: 167944143}
   - {fileID: 7470640668080675343}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1569323591
 PrefabInstance:
@@ -20671,7 +20671,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1899441816
 MonoBehaviour:
